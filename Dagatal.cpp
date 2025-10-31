@@ -1,4 +1,6 @@
 #include <iostream>
+/* Problem being solved:
+https://open.kattis.com/problems/dagatal */
 
 void days_in_month(int month){
     int days;
@@ -7,6 +9,7 @@ void days_in_month(int month){
     } else if (month == 4 || month == 6 || month == 9 || month == 11){
         days = 30;
     } else days = 28;
+    // This month has this amount of days:
     std::cout << days;
 }
     
@@ -14,6 +17,7 @@ void days_in_month(int month){
 
 int main(){
     int month;
+    // What month is it?
     std::cin >> month;
     if (month > 0 && month < 13){
         days_in_month(month);
